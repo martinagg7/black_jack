@@ -18,13 +18,14 @@ cartas = {
 }
 
 lista_cartas = list(cartas) #creo una nueva lista con unicamente los valores de las cartas del diccionario
-print(lista_cartas)
+print("Estas son las cartas de la partida  -->  ",lista_cartas)
 
 
 #PARTE DEL JUGADOR
 n=0
 numcartas=0
 sumacartasjugador=0
+#le doy la opcion al jugador de devolver las cartas al crupier si no le gustan y que este le entregue otras dos de la baraja
 while True:
     numcartas=numcartas+1   
     carta=random.choice(lista_cartas)  
